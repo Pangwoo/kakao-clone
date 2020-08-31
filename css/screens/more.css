@@ -1,0 +1,35 @@
+.more-body {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 30px 0px;
+}
+
+.more-body__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-right: 92px;
+}
+
+.more-body__icon i {
+  font-size: 30px;
+  margin-left: -5px;
+}
+.more-body__icon span {
+  display: block flex;
+  justify-content: center;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.suggestions {
+  padding-top: 25px;
+  border-top: var(--main-border);
+}
+
+.more-image {
+  width: 50px;
+  height: 50px;
+}

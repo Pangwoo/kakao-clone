@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats - Kokoa Clone</title>
+    <title>More - Kokoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -25,18 +25,16 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Chats</h1>
+      <h1 class="screen-header__title">More</h1>
       <div class="screen-header__icons">
         <span>
           <i class="fas fa-search fa-lg"></i>
         </span>
         <span>
-          <i class="far fa-comment fa-lg"></i>
-        </span>
-        <span>
           <i class="fas fa-music fa-lg"></i>
         </span>
         <span>
+          <!--<span class="small-badge"></span>-->
           <i class="fas fa-cog fa-lg"></i>
         </span>
       </div>
@@ -45,20 +43,70 @@
     <main class="friends-screen">
       <div class="user-component">
         <div class="user-compontent__column">
-          <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAA9lBMVEX64QD///88Hh7/6wD+/OD/7TX+9r396VH/7QD/8gD/8QD95AA5Gx43GB82Fh//7wAwDh/q1QAwAB5FJRtcQhpuUhXQwAmznhBCJR0zEx9TOx3bxwU2Fh7/9gAwDR/fzQYnACB9YhRiRhlxVBX13AA/IB2skg8sByD//viCaBVJLRyfhBDVvQklACArACBCIRz+9a3//u/Irw2WfROMcxV2XRhaPRqnjhC1mw1LMBw2Dh2ZgxRnThm/pgtKLxzw4AP++s7+9J797XD/7EP98ZH98H79+dP86U3KswygixHbwARgQxjWxgrl1QV7ZheEbxcYACH97GMyVqayAAAPD0lEQVR4nO2dC3+aSBeHqTQtOgNIo4moYBJvVYltFLxEqW3S7aptku33/zIv10RhUJAZiXn9b3+7hrVmHs9h5pwzF6h3b11U0g0griPh4etIePg6Eh6+joSHryPh4etIePg6Eh6+/t8J33//8Pr1/f3nHQnf/7j7eH/y+nX/8e7n9x0Ib37e04CyBOw/9n9WXlp/kC/D/X8sH2U1kD65ex+V8PuJy3cYok++RiP8Cg6KjzKN/U8UwsMDNBSAiCT8dYiAhhWRjooi/HxPJ93anQQoVHeDIvxxiBY0Rd+FI7z591AJqRPEuIgg/HCSdEN3Fv0zFOE/h3kXmgJ3/gDOT/j57mCdlKL+9fc1fsKbv0k3M4bu/Tein/D9x6SbGUMnH944ITgSHglfv9484du34dsnPHrpkfAA9OYJ374Nj4SECcGayPyOZAhdolpNcFWr1SgSpPu3IQA0oITKUunpo2Gnr6otU09qfzJsjPS5UhJqgKbxYe6X0Gg6JSx7o4WqTQftOivKctaQbCor33LwdPy7+tRv6ErFwMREuT9Co8mCMpq0psU6lxVFjoUwtS4IIcuJWRG2c5ra6JUoGsNU0L5sCBhQ0vta7hSKYtlL5pXJydWL06ehUmNiQ+6D0HDOyqiVa0NuK9wqZtmgrHYUionFuAcbAqamt4opwytD061Qsu3psELHKNcSJwR0pVPMijvguZScXL/sgZ2dlSyh0RvOL28vuF3pXMjmxaAh7Ni1kiQEoDbPf2rubL1ViRenQ4HaCZIYIQBCT5NlLHymuG5xWKKiIxKzoWG/Vh0fnylRvmpUIpuRECGglP44i5XPYoSaLkRFJEJIC40rsYybzxDMtlUlmhlJ2BDQvcu6iN2AtlgxN6xFGh7xE9JUp0iKzxSX0pYRwhz8NmRKGkvCQV8ExeIovKfiJgSMTtSAttiUGt5T8RICqgPjRjBhBJv5ZUhEvDYEgiqzewA0JA96IT0VJyEoXeKJ0cIoO9ZDRTg4bQgUbX+AxvB/OqqFQcRHCJR8c398KXPYaISwIj4b0spU3iuggQiH2+9FbIR06WrfgKlUudzYnhljIqQre7eghVgfbRs0MNkQ1LRsAoAG4lhn9kEIKJXbYy+6Ki6nbLEiFkJ6mEoI0Bg0NGEjIhYb0nqbbKy9STCrbhwWcRCC5VRMDNAIw+sjwoSg1iefTWySmFM2IWKwoX66p2g7SPLThuJNfBuCUj6ZgeJFMDXa0L64hKDWSdZHTYlXpWAjxiZUxvtIebdI7pCzIaUmEa15VT5dBhkxLiFQfDO5iaipBrppXMLL/eaEQYK3QUaMaUN6+elVmDCV6rYyRAh5nwmhudyAhSv/mP+Cq74My2XUhCkb+jJE3BnwU8CYGI8QCLfQ87u/FdEquFEBZMdTbTr2tZrNVfMDXwAP2WI+n6uvXS6nCnX/goDrDo9uZCxCpnG93p62Oi8h9efciV3ZU/VsRs/mT4W1QAiy/QearvQLnpaX1ZJxedJ+uQzF6UJvPBa8cZQ4QBdtYtpwuhbOwNRkJqWRkqTK2Mw/2EKDlniGl2aTNRi5lZHMq+r64JrVGInnJbr/7Jfw9rEiSdJs4f0uINtDZlGxCOnluvtwuTOJDpK06Jrf9GTGWz9mhNYKDJSVtHk13Wuv2eZibn2gNB+zLmDrwXxn+uHSm8+IKjpPjEPIDNd/i6g9ZIIJ510zDfjjviPdG7/AsF8ECzx9Nlg1otF92OClHOt8E48V6wMYeuGNhstXyDwxlg2B5iHMV9LBhPqF4XWuCU0jrvxt9lRgbMKchzCzSmgC8tYb+dnESwjbc5QR4xCCSnH9XmDbPckBYJ7JnFcZSZONN8yfjczwi5dOPyShrDmAdKZ05Q+Hh0g3jUFI676ebzpnJFuuqdLOz/TCSEFcN7ZaKZ0Vn900HGF2Wso4gDPfbWh8SAu3l9Id36DEtqeXllqOsZiOZv2s5YwBEJaHDGOZz3I08PhME4owmyulbUCeURE5aXmKGvRjeWnL7yhQzForRtlz+47kp9fWBdG0ATew+lqGHlmIUuO5Kw5DKBZLTk/N82oXFf0UUYXFGIRAyAdW2GDBJVwtAIhPVj+TLrVrZsPTlYHrpiEI1wDXAw333W1kAXx3QnqZC6zPIAndi1KnqVu2zLTcm2k7YbP9xwVk+kjAFKyjupoYNqTnxWiE5ak1mDCZXFO1egyp5/amWwmL47kDmJn1US5qvb2P9z6k9W+BmROSkO1b/Uy6dCtOrZbzM3d830pY7T0DTgKX4ZZVVGgag3DkHSw2E8K23Upp0YRt3X7Z74Yi5AWFcYeJST3Qc7gWIqqJY8NGNEJuavUzDG1kGdA2p7QMR2jefA7gwpdUrBBqiOEiDuGwHo1wYdvtzPhiuLwVXjKZgZtTbSG0xRgZyYbqM5IwjpdumHBCEMLTkt2TLow2smPHTYcXUQgzZ4NN1WeuWsFsw0iE2arVf/JAMxnYiRW6ZZwiQVgb0sNNC8YNz0jSSy8cqynWGONGqOmqHIHQuA+fNpRnOQ1BGMdLI/U07Bdgh2p2RmGkIU7K241CaMRBG2bysPc0kUaLrmqZkJ9pMmuqOQFWED6zJgW2EjLOaLGS7iMIHzGPFno7AuGnpW2zs6ldexu3LDdleGtI3EbIZBS7n6KZdCPw9i8/YSaMErVlf9tGYIQzVzM7WVfMvmMLIcOfjQczGxadOdlvR0VtMe5DUIoQeXcbbtzsZMSSm+rNzHdsIcwI+exFn7ez6rQQsHQHe+QdJXtiTx/cpN8jhm7IobInCHXnS5HO6sgJPXT2FC8DDm3D5pPbU/jEn7XLoTJgJ382vhTpHLmRgy0iS1F4qxgBhFCeB5jQdNOWHK6KwT46xUqGcSP2dULsVQx/JSqIUPztOimzKsdNzzn4Qli8kG1ly15CmFrYFR6af6giJvW4S1TyFMtLS4GdqYewu3B60kyGf1HGqX7/yXEuYabSyldtTdsy9NTayuOeU4/l/4z9Az/s4K4mUqAaNIW/Tsh+ObOra7PF4OpFA93i5md92SU0voPnqQ4jUSp76qXi1Ck5M7x+6/UfWEBOXMSqeXur+kGEcsuudGcqg674ouuqPSRm9ILoEq7eoNLEWxE2eix3VPTXvFkCVX16GRRerBOK51YiwTD6WgEC1iv2ZEVlKiMIjVFh3PUQwttz5/b1zHCkAmdm4s6uBRjxmTBjEML63HFSdb1/6I7sGoWZMFT8nW26UvQSprj23E73Mw+eSZOg2bV4M6R84yKAEC6shjC0EVgbY7V9w1U8X7vspIyzJ/GT7p+Xk+bfrhWnLvDcp8l5e8jwEYoD9BLFuLPcbEBvymkPEsPwUs8cm7NPszTDZPiR59aBZcWaLT3LlcXpg5TOrCotzZ5gt29Ed0yaWbykok3V+rC1yTlTFwGz3DFXKjCtgMUmsNCvGKnRmVWHgfWJ+YNe9Ha94vSP+aZHo63y47xUWdNcLUD45fyBph/OV4YlmDXnw2dzTz8Ob1HZb2wvpWjF12m7v7Ge70/UolNoqmuTyRNieVg2p076V1ZOnB1P86uaFs3LbOFxMnn8tmouKOaNDxt4YuJmK2C9d+w1UYErhiDHsc/7SKFYZkWUQ3Miy7lVYXFdrPs3y5415OYl7w5VeBu43Dsu4TzIiPtVEzl3iMWGtaA7ca8y+ixShBRQviS8QthUtx/cwNiEVCf55ZfiIHgFLY5V0Imu1DcF4YZV0BhWsgO9nbCfii2iK9mNwKa/+9ksWABz8w27EfDsKMknuqPkdPNGSxy7goA/HtufIKtuPCoDy74nQG2YpCEtMb9hJwIuGxrjvpqUn3LFTTchLhuaiPlkRkU2pW/ZfohrHzAQxkkgwovG1qMVsO10Fk73v/0JXnQCVujjt6G5mbu4b0RWDFq9TsKGZuXtar97vMr1TogzFbCeGrHM73O/M9cehjoYA+vJH8tLuLcQVSyO9n7yh5lnqIX9RDdQvAp3tAnuM4aAMGzvY+yHohb6yC/cpyjV9AH5gZGDauij6bCfhAVASbsg3N/IIU+mIUNo1TU+kRwZ4fXvZZRD6UicuUcrg2tifar8qRPpfEgy5ybSlNHhkHBVyHHVJZ/4qYLmx9LLVjvCocEh+crwakRFPHGX2OmeNKVrwavCduLjYK5TiX7aLrkTWmlhFLxoKjqfWM71Ix57abeD5Cm79CWuAMfgu+ooYJcjoYkSCphsWJbr+YZC7XgcNEHCTcszwwtm5bGql3blI2rDDavCQuOJ3VS1oQgxHglBkBDUtHhnK7Hyxe3VUNnxkOtnkSPctPNrq+0Muu6XamNZi/1AD4I2pEenwV4K/c9+sK9Dlss2u3K72pnXcDz8gaiX9oOXn7LjccEIUThDZWthe9l6zcJ6YXx12TE6Fp7H9JhzcoRA0AJGQ8i1+yVB0RudfutSq+anhvJV7VLtD0e9pUDRPIPzWTPECOm5d0GII1ac6oAG5jo30w1rtsznz9hXMD8yiKAN0dsxoNhWS6tLX8g+CokgIaj1UU5qGDBydhBTxAhLVURJSjztR8rPMYicDRH7TaA81cMXWDCJ3H3Y8A14IlR3eUBFXBEiBIJv705zvH8DUuRs6Ftlw14jt7CSFzHC3vpYkU2N4j22aWeRIqwNVyvfLNQqIWb6yIhQrU24fCGE7KCx5zFwtSmECEsvi9a5QmuXChIukSLsucVSyOUam48yJi0ihKDWcdbVcqnWPIExcLUtZAgFZ+toc7zz08RwiRDh0jpauNzVlGQNaIoMoW46qfwlcQNSxGzYuE6x3XySXehLW0h56X+3nSSiUIRIjfj6ElMlKa6IxaUJRaF+HZ/LffiECT2Xe496+zZ8+4RHLz0SHoDePOHRhrZu/ibdzBi6/x6C8N3da4kyd9DH92EIfyZaS4olcOfHQRB+OEm6oTuL/hGK8PPfQ3VTcO93UhThu6+HSkj/RNCgCN/9Pcw7EdzfhCW82WnpY9ICwD9UBBG++3WAiAB8RbKgCd/9og8NMQgwiNCIbF5D/TO0ALj/FUASRPju89e/J6+kRrhNgD7598fnIJBAQoPxw8+7vx9fv/7e/fMV1YluJzR18/716ybQfGEI34COhIevI+Hh60h4+DoSHr6OhIevI+Hh60h4+DoSHr7+BxPrLHPuVpkEAAAAAElFTkSuQmCC"
-            class="user-component__avatar"
-          />
+          <img src="screenshots/profile.jpg" class="user-component__avatar" />
           <div class="user-component__text">
-            <h4 class="user-component__title">Kokoa Talk</h4>
-            <h6 class="user-component__subtitle">
-              Please check My kokoa account Info
-            </h6>
+            <h4 class="user-component__title">Gwangwoo Lee</h4>
+            <h6 class="user-component__subtitle">+82 10-5256-3011</h6>
           </div>
         </div>
         <div class="user-component__column">
-          <span class="user-component__time">21:22</span>
-          <span class="badge">1</span>
+          <i class="far fa-comment-alt fa-2x"></i>
+        </div>
+      </div>
+
+      <div class="more-body">
+        <div class="more-body__icon">
+          <i class="far fa-calendar-alt"></i>
+          <span>Calendar</span>
+        </div>
+        <div class="more-body__icon">
+          <i class="fas fa-upload"></i>
+          <span>Talk Drive</span>
+        </div>
+        <div class="more-body__icon">
+          <i class="far fa-surprise"></i>
+          <span>Emoticons</span>
+        </div>
+        <div class="more-body__icon">
+          <i class="fas fa-brush"></i>
+          <span>Themes</span>
+        </div>
+      </div>
+      <div class="more-body">
+        <div class="more-body__icon">
+          <i class="far fa-user-circle"></i>
+          <span>Account</span>
+        </div>
+        <div class="more-body__icon">
+          <i class="far fa-comments"></i>
+          <span>Openchat</span>
+        </div>
+      </div>
+      <div class="suggestions">
+        <span class="suggestions-title">Suggestions</span>
+        <div class="more-body">
+          <div class="more-body__icon">
+            <img
+              class="more-image"
+              src="data:image/jpeg;base64,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"
+            />
+            <span>Kakao Story</span>
+          </div>
+          <div class="more-body__icon">
+            <img
+              class="more-image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTQtEyrsPHD04LaPR6IoNACkCSj48epsP94Ow&usqp=CAU"
+            />
+            <span>Kakao friends</span>
+          </div>
+          <div class="more-body__icon">
+            <img
+              class="more-image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTUSm-HIlV_ot7O4P-J4fBXD8NCLRINBwU_Tg&usqp=CAU"
+            />
+
+            <span>Kakao Gem</span>
+          </div>
         </div>
       </div>
     </main>
@@ -73,7 +121,7 @@
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
             <span class="badge nav__notification">1</span>
-            <i class="fas fa-comment fa-2x"></i>
+            <i class="far fa-comment fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
@@ -83,7 +131,7 @@
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="more.html">
-            <span class="nav__ellipsis__notification"></span>
+            <span class="nav__ellipsis__notification small-badge"></span>
             <i class="fas fa-ellipsis-h fa-2x"></i>
           </a>
         </li>
