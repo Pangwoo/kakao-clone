@@ -1,3 +1,6 @@
+.more-screen .icon-row {
+  margin-top: 30px;
+}
 .more-body {
   display: flex;
   width: 100%;
@@ -25,8 +28,12 @@
 }
 
 .suggestions {
-  padding-top: 25px;
+  margin-top: 50px;
+  padding-top: 40px;
   border-top: var(--main-border);
+}
+.suggestions__title {
+  margin-bottom: 30px;
 }
 
 .more-image {
